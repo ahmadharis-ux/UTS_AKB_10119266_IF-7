@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Profile"
+        android:textSize="26dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:background="@color/black">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center">
+            <ImageView
+                android:id="@+id/foto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/foto"/>
+            <TextView
+                android:id="@+id/nama"
+                android:layout_below="@+id/foto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ahmad haris"
+                />
+            <TextView
+                android:id="@+id/nim"
+                android:layout_below="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10119266"
+                />
+
+            <TextView
+                android:id="@+id/kelas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nim"
+                android:text="IF - 7" />
+            <TextView
+                android:id="@+id/email"
+                android:layout_below="@+id/kelas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ahmad.10119266@mahasiswa.unikom.ac.id"
+                />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

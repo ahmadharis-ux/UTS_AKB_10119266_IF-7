@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:padding="10dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tuliskan Kegiatan Anda Hari Ini !!"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/tanggal"
+        android:hint="Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_below="@+id/texttitle"
+        android:inputType="date"/>
+    <EditText
+        android:id="@+id/judul"
+        android:hint="Judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_below="@+id/tanggal"/>
+    <EditText
+        android:id="@+id/kategori"
+        android:hint="Kategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_below="@+id/judul"/>
+    <EditText
+        android:id="@+id/catatan"
+        android:hint="Catatan"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/kategori"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_insert"
+        android:textSize="24dp"
+        android:text="insert"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/catatan"/>
+
+</RelativeLayout>
